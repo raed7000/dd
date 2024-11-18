@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ff8cdd;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            color: white;
+        }
+        .container {
+            position: relative;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 80%;
+            max-width: 800px;
+        }
+        .headline {
+            font-size: 48px;
+            color: #ffccff;
+            animation: fadeIn 3s ease-out;
+        }
+        .message {
+            font-size: 24px;
+            color: #fff;
+            margin-top: 20px;
+            animation: fadeIn 5s ease-out;
+        }
+        .heart {
+            font-size: 80px;
+            color: #ff69b4;
+            animation: heartBeat 1s infinite;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .music {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <audio class="music" autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1 class="headline">Happy Birthday, My Love!</h1>
+        <p class="message">
+            Today is the day that we celebrate YOU and all the beautiful moments we share together. 
+            I am so lucky to have you in my life. Here's to many more happy birthdays with you!
+        </p>
+        <span class="heart">❤️</span>
+        <br>
+        <button class="button" onclick="alert('I love you! Have the best birthday ever!')">Make a Wish 💫</button>
+    </div>
+
+</body>
+</html>
